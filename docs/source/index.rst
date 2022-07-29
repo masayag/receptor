@@ -98,6 +98,8 @@ Start a container, which automatically runs receptor with the default config loc
 
     podman run -it --rm --name receptor quay.io/ansible/receptor
 
+For configuration other than ``local-only``, specify also the listener/peer port e.g. ``-p 2222:2222``
+
 In another terminal, issue a basic "status" command to the running receptor process
 
 .. code::
